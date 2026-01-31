@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = 'https://resume-analyzer-8bx3.onrender.com';
 
 export interface UploadResponse {
   id: string;
@@ -69,7 +69,7 @@ export class ApiService {
     } catch (error) {
       console.error('Fetch error:', error);
       if (error instanceof TypeError && error.message.includes('fetch')) {
-        throw new Error('Cannot connect to backend server. Make sure the server is running on port 5000.');
+        throw new Error('Cannot connect to backend server. Server may be sleeping or unavailable.');
       }
       throw error;
     }
