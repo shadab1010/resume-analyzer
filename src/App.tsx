@@ -172,7 +172,7 @@ function App() {
             <div className="flex justify-center space-x-6 text-sm text-gray-400">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Contact Support</a>
+              <a href="https://shadab-alam-portfolio.netlify.app/" className="hover:text-white transition-colors">Contact Support</a>
               <a
                 href="https://www.linkedin.com/in/itsshadab/"
                 target="_blank"
