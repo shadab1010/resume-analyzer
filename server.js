@@ -174,9 +174,10 @@ app.post('/api/analyze', upload.single('file'), async (req, res) => {
         });
     }
 });
+// ✅ Use dynamic port for cloud deployment (Render / Railway / etc.)
+const PORT = process.env.PORT || 5000;
 
-const PORT = 5000;
 app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Resume Analyzer AI Server running on http://localhost:${PORT}`);
+    console.log(`Resume Analyzer AI Server running on port ${PORT}`);
     console.log('Ensure you have a .env file with GEMINI_API_KEY');
 });
